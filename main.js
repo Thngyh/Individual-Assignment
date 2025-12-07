@@ -18,6 +18,11 @@ const headerHTML = `
 </header>
 `;
 
+document.addEventListener("DOMContentLoaded", () => {
+    const wrapper = document.querySelector(".page-wrapper");
+    if (wrapper) wrapper.classList.add("page-enter");
+});
+
 // Footer HTML
 const footerHTML = `
 <footer>
