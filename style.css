@@ -278,14 +278,27 @@ h2 {
 
 .about p {
     max-width: 700px;
-    color: white;
+    color: #5757b7;
     text-align: center;
-    font-size: 1.1rem;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-style:italic;
+    font-weight: 500;
+    background-color: #ffffff30;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    display: inline-block;
+    padding: 15px;
+    
+}
+
+.about p:hover {
+    transform: scale(1.05);
 }
 
 .about-img {
-    width: 300px;
+    max-width: 300px;
+    max-height: 340px;
     border-radius: 10px;
 }
 
@@ -296,16 +309,27 @@ h2 {
     list-style: none;
 }
 
-.skills li {
-    color: #ffffff;
-    font-weight: bold;
-    margin: 8px 0;
+.figma-link {
+    position: relative;
+    color: #5651b1;
+    text-decoration: none;
+    font-weight: 400;
+    font-style: italic;
 }
 
-.skills li:hover {
-    background: #a597b6;
-    transform: translateY(-3px);
-    transition: 0.3s;
+.figma-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background: #5651b1;
+    transition: width 0.3s ease;
+}
+
+.figma-link:hover::after {
+    width: 100%;
 }
 
 /* Portfolio */
@@ -320,7 +344,7 @@ h2 {
 .project-card {
     flex: 0 0 300px;
     max-width: 400px;
-    background: white;
+    background: #ffffff4d;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -349,14 +373,15 @@ h2 {
 .project-card:hover img {
     transform: scale(1.05);
 }
+
 .project-card h3 {
     padding: 20px 20px 10px;
-    color: #2c3e50;
+    color: #353548;
 }
 
 .project-card p {
     padding: 0 20px 20px;
-    color: #666;
+    color: #7c7c7c;
 }
 
 .project-card:hover {
@@ -364,7 +389,7 @@ h2 {
     box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
 
-/* Project Detail Page */
+/* Portfolio 1,2,3 */
 .project-detail-section {
     padding: 60px 20px;
     background: linear-gradient(230deg, #b9e0fe 0%, #e0c4fe 100%);
@@ -375,7 +400,7 @@ h2 {
     display: inline-block;
     margin-bottom: 15px;
     font-size: 16px;
-    color: #333;
+    color: #7c7c7c;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -402,7 +427,7 @@ h2 {
     gap: 30px;
     align-items: flex-start;
     flex-wrap: wrap;
-    background: white;
+    background: rgba(255, 255, 255, 0.427);
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
@@ -442,6 +467,7 @@ h2 {
     margin-top: 25px;
     display: flex;
     gap: 15px;
+    margin-left: 150px;
 }
 
 .exitBtn i {
@@ -455,8 +481,8 @@ h2 {
 .exitBtn:hover i {
     color: #000000;
 }
-/* Contact Form */
 
+/* Contact Form */
 .contact {
     background: linear-gradient(250deg, #b9e0fe 0%,#e0c4fe 100%);
 }
@@ -481,7 +507,7 @@ h2 {
     margin: 0 auto;
     padding: 40px;
     border-radius: 10px;
-    background: white;
+    background: rgba(255, 255, 255, 0.297);
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
