@@ -692,12 +692,14 @@ footer {
         align-items: center;
         justify-content: center;
         width: 100%;
+        display: flex;
     }
 
     .radio-group label {
         width: 100%;
-        justify-content: left;
-        text-align: left;
+        justify-content: center;
+        text-align: center;
+        display: flex;
     }
 }
 
