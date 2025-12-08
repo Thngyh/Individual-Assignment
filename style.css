@@ -688,8 +688,14 @@ footer {
     }
 
     .radio-group {
-        text-align: center;
         justify-content: center;
+        width: 100%;
+    }
+    
+    .radio-group label {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
     }
 }
 
