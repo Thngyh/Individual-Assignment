@@ -686,6 +686,11 @@ footer {
         margin-left: 0;
         justify-content: center;
     }
+
+    .radio-group {
+        text-align: center;
+        justify-content: center;
+    }
 }
 
 /* --- Tablets & Mobile (max-width: 900px) --- */
