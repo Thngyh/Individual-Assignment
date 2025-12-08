@@ -696,7 +696,7 @@ footer {
 
     .radio-group label {
         width: 100%;
-        justify-content: center;
+        justify-content: left;
         text-align: left;
     }
 }
